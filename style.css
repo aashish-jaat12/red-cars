@@ -1,0 +1,157 @@
+*{margin: 0;
+padding: 0;}
+body{
+	height: 100vh;
+	overflow: hidden;
+background: url(background.jpg);
+height: 100vh;
+background-size: cover;
+background-repeat: no-repeat;}
+
+
+
+#game{width: 390px;
+height: 100vh;
+border: 1px solid balck;
+margin: 0 auto;
+position: relative;
+
+overflow: hidden;}
+
+#scoreon{ background: repeating-linear-gradient(45deg, black, transparent 100px);
+	text-align: center;
+	color: white;
+	display: none;
+}
+
+#rod {
+  
+height: 1800vh;
+    
+    background: url(bg.jpg);
+    
+    background-size: contain;
+  
+position: relative;
+    animation: carMove linear 12s infinite;}
+
+
+
+@keyframes carMove
+{
+    100%{
+        transform: translatey(-500vw);
+    }
+}
+
+#bluecar{
+	height: 110px;
+	width: 130px;
+	
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: move 1.4s linear infinite;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+#bluecar img {height: 101px;
+}
+
+
+#readcar{
+	height: 110px;
+	width: 130px;
+position: absolute;
+	
+	
+	top: 400px;
+	left: 130px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+}
+#readcar img{height: 101px;}
+
+
+
+
+@keyframes move {
+	0%{
+		top: 0px;
+	}
+	100%{
+		top: 100vh;
+	}
+}
+
+#button {
+    width: 96%;
+    position: absolute;
+    
+    top: 70vh;
+    justify-content: space-between;
+    display: flex;
+    margin: 10px;
+
+}
+
+
+
+#button a{
+	padding: 0 8px;
+    font-size: 26px;
+}
+
+#gameover{display: none;
+height: 200px;
+width: 400px;
+background: cornflowerblue;
+margin: 1rem auto;
+border-radius: 20px;
+font-size: 30px;
+text-align: center;
+color: white;
+position: relative;
+top: 19vh;
+}
+ #score{
+ 	font-size: 2.2rem;
+ 	color: red;
+ }
+ #btn{
+ 	padding: 0.5rem 1rem;
+ 	border-radius: 20px;
+ 	border: none;
+ 	background-color: black;
+ 	color: cyan;
+ 	font-size: 25px;
+ 	margin-top: 10px;
+ 	cursor: pointer;
+ }
+
+@media (max-width: 430px){
+
+	#game{width: 100vw}
+
+#gameover{
+height: 250px;
+width: 90vw;
+}
+#gameover h1{padding-top: 35px;}
+#scoreon{display: block;}
+
+}
+
+
+@media (min-width: 700px){
+
+	#button{display: none;}
+
+}
